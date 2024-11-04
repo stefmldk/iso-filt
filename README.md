@@ -27,9 +27,9 @@ In addition, this method tends to generate cleaner results because an "exon matc
 
 ### Running iso-filt
 For a small help text explaining how to run iso-filt, run the following command in a directory containing iso_filt.py:
-´´´
+```
 python iso_filt.py -h
-´´´
+```
 
 ### Important
 This script is designed for long-read data and will most likely not work with short-read data.
