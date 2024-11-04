@@ -23,10 +23,10 @@ In addition, this method tends to generate cleaner results because an "exon matc
 
 ### Requirements
 - Pysam
-- Annotation file matching the reference used for alignment
+- Annotation file matching the reference used for alignment (.gtf/.gff)
 
 ### Running iso-filt
-For a small help text explaining how to run ``iso-filt``, run the following command in a directory containing iso_filt.py:
+For a small help text explaining how to run `iso-filt`, run the following command in a directory containing iso_filt.py:
 ```
 python iso_filt.py -h
 ```
