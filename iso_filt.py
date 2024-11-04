@@ -315,7 +315,7 @@ def is_potential_isoform(read, gene_exons, min_match=2, position_slag=20):
 
 def get_exon_overlapping_reads(bam_file, genes_of_interest, annotation_file):
     """
-    Filters and returns reads that overlap sufficiently with exons in the genes of interest. Sufficiently is defined as
+    Filters and returns reads that overlap sufficiently with exons in the genes of interest. Sufficiently is defined as at least two exon matches.
     :param (str) bam_file:          Path to bam file
     :param ([]) genes_of_interest:  List of gene names to do filtering for (must match the names in the annotation file)
     :param (str) annotation_file:   Path to annotation file
@@ -346,10 +346,6 @@ def get_exon_overlapping_reads(bam_file, genes_of_interest, annotation_file):
 
 
 def run_with_snakemake_input(log_file):
-    """
-    Not currently used and not updated. If needed, make it correspond to main
-    :return:
-    """
     import sys
     orig_stdout = sys.stdout
     orig_stderr = sys.stderr
