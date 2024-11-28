@@ -374,7 +374,7 @@ def main():
     import argparse
 
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument('-b', '--bam_file', help='Path to bam file - as relative or absolute path', required=True)
+    parser.add_argument('-b', '--bam_file', help='Path to bam file - as relative or absolute path. A corresponding bam index file must be present in the same folder', required=True)
     parser.add_argument('-a', '--annotation_file', help='Path to annotation file - as relative or absolute path', required=True)
     parser.add_argument('-g', '--genes', help='Comma separated (no spaces) names of genes of interest', required=True)
     parser.add_argument('-s', '--sample', help='Sample_name', required=False)
