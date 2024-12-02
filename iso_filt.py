@@ -46,7 +46,7 @@ def get_first_record_gene_annotation_data(gene_names, annotation_file, not_found
                 if search_term in line:
                     line_blocks = line.split('\t')
                     if line_blocks[2] == 'exon':
-                        exon_number = re.search(r'\d+', re.search(r'exon_number "\d+"', line).group()).group()
+                        exon_number = re.search(r'\d+', (re.search(r'exon_number "\d+"', line) or re.search(r'exon_number \d+', line)).group()).group()
                         if not exon_number in exons:  # This is the control point that ensures the first block only
                             exons[exon_number] = {
                                 'start': line_blocks[3],
