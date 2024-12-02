@@ -7,6 +7,7 @@ GitHub: https://github.com/stefmldk/iso-filt
 import sys
 import os
 import gzip
+import re
 from bisect import bisect
 
 try:
